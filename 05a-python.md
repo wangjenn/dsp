@@ -12,7 +12,14 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> **Similarities**: 
+- Lists and tuples both store a list of information. 
+- Each value is numbered starting from zero for both lists and tuples 
+- Recalling values from ilsts is exactly the same as you do with tuples ("print VARIABLENAME").  
+
+>> **Differences**: 
+- List is mutable and tuples is immutable. In other words, you can't change the values of tuples. 
+- List is created using brackets and tuples using parentheses 
 
 ---
 
