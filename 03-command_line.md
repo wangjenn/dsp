@@ -51,6 +51,5 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 - It is used to build and execute command lines from standard input. More specifically, "xargs" is used to remove long list of file names which were produced by "find" & "grep" commands. It divides the list into into sub-list with acceptable length. 
 
-- **Example**:
-    #find . -name "*.sh" | xargs grep "ksh" 
+- **Example**: find . -name "*.sh" | xargs grep "ksh" 
 - First, find all files that end in .sh from current directory. Then, find each .sh file that has the word "ksh." 
