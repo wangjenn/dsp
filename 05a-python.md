@@ -21,6 +21,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 - List is mutable and tuples is immutable. In other words, you can't change the values of tuples. 
 - List is created using brackets and tuples using parentheses 
 
+>> **Tuples** can be used as keys to dictionaries, while **lists** cannot. This is because to be used as a dictionary key, an object must support the hash function (e.g., through_hash_). Because lists are containers, hashing lists by their id would produce unexpected behavior. 
 ---
 
 ###Q2. Lists &amp; Sets
