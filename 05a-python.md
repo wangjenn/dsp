@@ -52,8 +52,10 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> **Lambda** allows you to have anonymous functions (functions with no names). It is essentially a one-statement function. 
 
 >> **Example**: 
->> student_tuples = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)] 
-  sorted(student_tuples, key=lambda student: student[2])
+```
+student_tuples = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)] 
+sorted(student_tuples, key=lambda student: student[2])
+```
 
 ---
 
@@ -64,14 +66,17 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> **List comprehension**: List comprehensions are a tool for transforming one list into another list. Every list comprehension can be rewritten as a for loop but not every for loop can be rewritten as a list comprehension.
 
 >>- **Map and Filter Example**: 
-    numbers = [1,2,3,4,5] 
-    doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
-    doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
+```
+numbers = [1,2,3,4,5] 
+doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
+doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
+```
 
 >>- **List Comprehension Example**: 
-    numbers = [1, 2, 3, 4, 5]
-    doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
-
+```
+numbers = [1, 2, 3, 4, 5]
+doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
+```
 
 ---
 
