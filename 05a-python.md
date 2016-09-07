@@ -49,7 +49,11 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> **Lambda** allows you to have anonymous functions (functions with no names). Lambda function can only have one line, and it always returns a value. 
+>> **Lambda** allows you to have anonymous functions (functions with no names). It is essentially a one-statement function. 
+
+>> **Example**: 
+>> student_tuples = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)] 
+  sorted(student_tuples, key=lambda student: student[2])
 
 ---
 
@@ -57,7 +61,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> **List comprehension**: 
+
+>> **
 
 ---
 
