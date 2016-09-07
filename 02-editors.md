@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> Emacs. It has been recommended by others. 
+>> Emacs because it has been recommended by others. 
 
 --
 
