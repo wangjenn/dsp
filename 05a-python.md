@@ -63,7 +63,7 @@ sorted(student_tuples, key=lambda student: student[2])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> **List comprehension**: List comprehensions are a tool for transforming one list into another list. Every list comprehension can be rewritten as a for loop but not every for loop can be rewritten as a list comprehension.
+>> **List comprehension**: List comprehension is a tool for transforming one list into another list. A list comprehension provides a compact way of mapping a list into another list by applying a function to each of the elements of the list. Every list comprehension can be rewritten as a for loop but not every for loop can be rewritten as a list comprehension.
 
 >>- **Map and Filter Example**: 
 ```
@@ -77,7 +77,19 @@ doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
 numbers = [1, 2, 3, 4, 5]
 doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
 ```
+Dictionary and set comprehensions both use curly brackets {}, but dictionaries are differentiated by the colon used to separate the elements in the comprehension. The set comprehension returns a set and the dictionary comprehension returns a dictionary. 
 
+>>- **Set Comprehensions**: will only return unique items 
+```
+a_set = {ch for ch in 'to be or not to be'} 
+print a_set 
+```
+
+>>- **Dictionary Comprehensions**: 
+```
+a_dict = {k:v for k, v in enumerate ('abcdefg')} 
+print a_dict 
+```
 ---
 
 ###Complete the following problems by editing the files below:
