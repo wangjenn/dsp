@@ -1,8 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
-def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -18,10 +16,15 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+def donuts(count):
+    s_prefix = 'Number of donuts: ' 
+    if count < 10:
+        return s_prefix + str(count) 
+    else: 
+        return s_prefix + "many" 
 
 
-def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -38,6 +41,16 @@ def both_ends(s):
     'xyyz'
     """
     raise NotImplementedError
+
+def both_ends(s):
+    first2 = s[0:2]
+    last2 = s[-2:]
+
+    if len(s) < 2:
+        return ' '
+    if len(s) > 2:
+        return first2 + last2
+
 
 
 def fix_start(s):
