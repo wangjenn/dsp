@@ -40,7 +40,6 @@ def donuts(count):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
 
 def both_ends(s):
     first2 = s[0:2]
