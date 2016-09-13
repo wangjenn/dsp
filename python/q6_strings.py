@@ -167,3 +167,5 @@ def not_bad(s):
      if len (b) % 2 = 1: 
          b_middle = b_middle + 1 
      return a[:a_middle] + b[:b_middle] + a[a_middle:] + b[b_middle:]
+
+
