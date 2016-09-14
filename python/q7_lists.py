@@ -91,7 +91,6 @@ def remove_adjacent(nums):
   return result
 
 
-
     """
     5) Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
