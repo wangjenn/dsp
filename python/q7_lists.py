@@ -19,6 +19,7 @@
     count = 0
     for word in words:
         if len(word) >= 2 and word[0] == word[-1]:
+            count = count + 1
     return count 
 
 
@@ -49,7 +50,7 @@ def front_x(words):
 
 
     """
-    Given a list of non-empty tuples, return a list sorted in
+    3) Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
     e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
          [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
@@ -61,12 +62,13 @@ def front_x(words):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    
 def sort_last(tuples):
-
+    return sorted(tuples, key=last)
 
 
     """
-    Given a list of numbers, return a list where all adjacent equal
+    4) Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
     returns [1, 2, 3]. You may create a new list or modify the passed
     in list.
@@ -80,12 +82,18 @@ def sort_last(tuples):
     >>> remove_adjacent([])
     []
     """
+    
 def remove_adjacent(nums):
+    result = [] 
+    for num in nums:
+        if len(result) == 0 or num != result[-1]:
+        result.append(num)
+  return result
 
 
 
     """
-    Given two lists sorted in increasing order, create and return a
+    5) Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
     the passed in lists. Ideally, the solution should work in "linear"
     time, making a single pass of both lists.
@@ -97,4 +105,5 @@ def remove_adjacent(nums):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    
 def linear_merge(list1, list2):
